@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopPicksCollectionViewCellReuseIdentifier" id="gTV-IL-0wX" customClass="TopPicksCollectionViewCell" customModule="recipe2">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pNC-gi-wdb">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pNC-gi-wdb" secondAttribute="height" multiplier="1:1" id="Vqk-8u-yEz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdasdasdadadasdasdad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Im-hy-bb6">
+                        <rect key="frame" x="5" y="145" width="130" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5Im-hy-bb6" secondAttribute="trailing" constant="5" id="2o0-If-gBz"/>
+                <constraint firstItem="pNC-gi-wdb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3xp-Vb-8Lt"/>
+                <constraint firstAttribute="trailing" secondItem="pNC-gi-wdb" secondAttribute="trailing" id="4VT-9h-m49"/>
+                <constraint firstAttribute="trailing" secondItem="pNC-gi-wdb" secondAttribute="trailing" id="9wo-bh-xh5"/>
+                <constraint firstItem="pNC-gi-wdb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Iba-wT-Kt1"/>
+                <constraint firstItem="5Im-hy-bb6" firstAttribute="top" secondItem="pNC-gi-wdb" secondAttribute="bottom" constant="5" id="OK9-nh-IzP"/>
+                <constraint firstItem="5Im-hy-bb6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Sm9-74-Fuf"/>
+                <constraint firstItem="pNC-gi-wdb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vif-Rv-qhP"/>
+                <constraint firstItem="pNC-gi-wdb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fSj-Io-tVb"/>
+            </constraints>
+            <size key="customSize" width="127" height="196"/>
+            <connections>
+                <outlet property="recipeImage" destination="pNC-gi-wdb" id="WTk-iQ-9qr"/>
+                <outlet property="recipeNameLabel" destination="5Im-hy-bb6" id="Hm2-j9-q5K"/>
+            </connections>
+            <point key="canvasLocation" x="213.04347826086959" y="112.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

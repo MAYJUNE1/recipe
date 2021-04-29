@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<categories>
+    <category>
+        <id>1</id>
+        <name>Main Dish</name>
+    </category>
+    <category>
+        <id>2</id>
+        <name>Appetizer</name>
+    </category>
+    <category>
+        <id>3</id>
+        <name>Beverage</name>
+    </category>
+    <category>
+        <id>4</id>
+        <name>Noodles</name>
+    </category>
+    <category>
+        <id>5</id>
+        <name>Soup &amp; Stew</name>
+    </category>
+    <category>
+        <id>6</id>
+        <name>Dessert</name>
+    </category>
+</categories>

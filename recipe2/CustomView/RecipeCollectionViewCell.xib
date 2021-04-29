@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeCollectionViewCellReuseIdentifier" id="gTV-IL-0wX" customClass="RecipeCollectionViewCell" customModule="recipe2">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YfB-Py-goV">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g16-hV-e2P">
+                        <rect key="frame" x="10" y="10" width="130" height="26.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="YfB-Py-goV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7nD-LX-deU"/>
+                <constraint firstAttribute="trailing" secondItem="YfB-Py-goV" secondAttribute="trailing" id="DEA-Nr-5Jy"/>
+                <constraint firstAttribute="bottom" secondItem="YfB-Py-goV" secondAttribute="bottom" id="IA2-WQ-FGF"/>
+                <constraint firstAttribute="trailing" secondItem="g16-hV-e2P" secondAttribute="trailing" constant="10" id="LcR-AU-4Ws"/>
+                <constraint firstItem="g16-hV-e2P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Rqg-Bd-txM"/>
+                <constraint firstItem="g16-hV-e2P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="alY-zg-AHc"/>
+                <constraint firstItem="YfB-Py-goV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="s9c-XG-3F4"/>
+            </constraints>
+            <size key="customSize" width="152" height="200"/>
+            <connections>
+                <outlet property="recipeImage" destination="YfB-Py-goV" id="axH-YG-sxW"/>
+                <outlet property="recipeNameLabel" destination="g16-hV-e2P" id="Yet-wY-vgz"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="105.13392857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

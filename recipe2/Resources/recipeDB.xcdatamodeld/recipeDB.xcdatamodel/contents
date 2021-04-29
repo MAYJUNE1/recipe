@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="ingredient" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecipeIngredient" inverseName="ofRecipe" inverseEntity="RecipeIngredient"/>
+        <relationship name="step" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecipeStep" inverseName="ofStep" inverseEntity="RecipeStep"/>
+    </entity>
+    <entity name="RecipeIngredient" representedClassName="RecipeIngredient" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="ofRecipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="ingredient" inverseEntity="Recipe"/>
+    </entity>
+    <entity name="RecipeStep" representedClassName="RecipeStep" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <relationship name="ofStep" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="step" inverseEntity="Recipe"/>
+    </entity>
+    <elements>
+        <element name="Recipe" positionX="-389.0625" positionY="35.94140625" width="128" height="118"/>
+        <element name="RecipeIngredient" positionX="-351" positionY="99" width="128" height="88"/>
+        <element name="RecipeStep" positionX="-324" positionY="117" width="128" height="88"/>
+    </elements>
+</model>

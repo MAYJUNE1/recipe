@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		181661FE2568E633D18903E97B1CDF5E /* XMLCustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B86A8A6D8FDB3E61896033C7ED88132 /* XMLCustomDateFormatTransform.swift */; };
+		2488AA41FF89CC698DD1C9D265D00B6E /* XMLHexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB52A8F1DA6388D0D9C8CA93EE011A /* XMLHexColorTransform.swift */; };
+		2631B830DCF2CA729B760E222E7C268D /* Pods-recipe2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3EB69A7FCF2D30C57E05B25F6BD3DC /* Pods-recipe2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		369DBE854D6583C6AA2BD745D9C1243E /* NSMutableDictionary+XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B612AEA54A91BD76FFB5409B2C225A /* NSMutableDictionary+XMLParser.swift */; };
+		3C07B0814591375B50CB8EC7C959D5E8 /* XMLMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD29CE74B1DDAE89075935505C4A9B0F /* XMLMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CB6BE085BBAB09821BF1097E95EE011 /* Sequence+compactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724E9C58734BF3B5FE2116CD881CF4A /* Sequence+compactMap.swift */; };
+		42BEEAC592B6EA9D52BDD197C3785AE2 /* XMLMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406B61068A41D2B22F7C19835896DB6 /* XMLMapper.swift */; };
+		439FBF62F99409EA01BA382ED6040BCB /* XMLTransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C24484ECC4200978E26459396C4A5 /* XMLTransformOperators.swift */; };
+		44C3973B1731C11BCA9883B0959BE75A /* XMLMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3858E364350B5E4A0F0F12FAC6650B12 /* XMLMappable.swift */; };
+		48C7831178A452AB16120CB149F2C983 /* Array+cdataString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68512ED0E647B5DA7AE0D40885012F52 /* Array+cdataString.swift */; };
+		4C0E2EB0B5276F39A31240E7FF622AAA /* XMLEnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B9201376A9B96B5FED86B87F5FB82B /* XMLEnumOperators.swift */; };
+		533E7BFA927A313F674C16B41956EA29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5432C19F8A34A73E16339610AD3C514E /* XMLMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767F8C712819405E3528BD7DEC4FA1C5 /* XMLMap.swift */; };
+		5C6AE37E3848E68D3E4AF7AED939547D /* XMLSerialization+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF979F68C760C29680EFA34765F482B3 /* XMLSerialization+Error.swift */; };
+		5FCF99B4F1AB220C91E80A8C5A3B09E3 /* Dictionary+isEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C769ECD872CB522F4EF753D418BC88 /* Dictionary+isEqual.swift */; };
+		6BE54D5B54F2C16F98242D8DE744753B /* XMLDateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74740B364412FD160D2B64F1402C26 /* XMLDateFormatterTransform.swift */; };
+		75286B2E2818C0C05A4BD4854C8B9148 /* XMLTransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54F1D4B2329C33649E8B96454A618CD /* XMLTransformType.swift */; };
+		7676C64A77B9EF20B900FC8034A81EE9 /* XMLSerialization+ReadingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3877AE210EFF906787C2F7B80C211 /* XMLSerialization+ReadingOptions.swift */; };
+		7AEA7848786425AA49C2A2578E31AA40 /* XMLObjectParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA5FCA7B9FB8FDE51AB1A106FF10AF /* XMLObjectParser.swift */; };
+		85418FBA7E87DC7E162FAF3241C87417 /* XMLEnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679DCEED01EC6057487CB061CAFDBF7E /* XMLEnumTransform.swift */; };
+		8650E4BBD4725DFA7E35449BDB1855F2 /* XMLDataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84434D696DE73243295A19D78617E7 /* XMLDataTransform.swift */; };
+		88BE631EB34B1CDBAB158024338563DC /* Dictionary+mapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA33B107AFF43F47C9627FC750B16DB /* Dictionary+mapValues.swift */; };
+		8CE9595586875D2EE33CBFE4C1B74BB9 /* XMLDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1870693975A87E49930D9F9463C576 /* XMLDateTransform.swift */; };
+		8DD83016C6F24B7E6BD8186221F5B226 /* XMLParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F080E07FFCE3971DC601F5A6FDB1D7 /* XMLParserHelper.swift */; };
+		8EFBB33611D29DBEB0894A21AB79FB81 /* XMLMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB38472571E6B1A36FB2699DFC940309 /* XMLMapper-dummy.m */; };
+		9014CE5DF68046022A8766FE16666655 /* XMLRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE707F11723BF9339C554FACFD3A01 /* XMLRepresentable.swift */; };
+		90646231050471AFC00A1EFBE4A4EB7C /* XMLParserConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DADC05F908799584FEC500AA2ADEB6C /* XMLParserConstant.swift */; };
+		A908205D077E7C0A53713608AC97E52E /* XMLNSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA314D9C908E0FEBC1EFD6702F64DED /* XMLNSDecimalNumberTransform.swift */; };
+		AC35D270A2B32A410267F15A70997DAC /* XMLCDATATransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAEF2F8BD3B117C68D37C2B2F4B7282 /* XMLCDATATransform.swift */; };
+		B276872F6AE04F500E026BFF198C7FE1 /* String+XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7871781E03DBFD2B54C0248E8C70CE1C /* String+XMLParser.swift */; };
+		C0C4C7E63281302E7EAC40F831B9634A /* ToXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280ADE56D2F96AB35021160A36579CCE /* ToXML.swift */; };
+		CB97C2935C463CCF872429105B07C489 /* XMLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8203D987705BA73D1DC37538854C5B /* XMLSerialization.swift */; };
+		CBC41989A7E70B401532DE303466E00A /* Pods-recipe2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 850B43AEF1899862AE64461139084BEB /* Pods-recipe2-dummy.m */; };
+		D0DE7C684B06F4D64C46D54DBC896881 /* Dictionary+XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A59BD475D70ED77C5D61C355BAF50 /* Dictionary+XMLParser.swift */; };
+		D1DB4CB56120B07F81790B6561A25E18 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15577EC41044CD2D485585BEE2AF04 /* Operators.swift */; };
+		D21A811AD101D11B44D106C6095A4DF8 /* XMLDictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9D6D85835F7667B9EBB760AA475FA1 /* XMLDictionaryTransform.swift */; };
+		E87804EDC364124A26DE48A76570C138 /* XMLStringConvertibleTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA5D1EEE1BE209DAE866214C947787 /* XMLStringConvertibleTransform.swift */; };
+		E93659EE2A81461D52947C33BEE7AE2C /* XMLURLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418F7AE39DE4D6FFD3C31EFC0DD92DE /* XMLURLTransform.swift */; };
+		EA8EE780A5DD8BC448BD70A7B7F6FA4C /* FromXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7FE0AD4746EAB2B68A380FAC66BB8 /* FromXML.swift */; };
+		F3669C56444928738C8566C401C28E5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F61DDF37937615866AB24422BE8701F0 /* XMLStringConvertibleOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486AD6047C31ED019DED6957AE0ABD2 /* XMLStringConvertibleOperators.swift */; };
+		FE56EE2591B402EECE0DC8777F41C76C /* XMLTransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D02F2195A115AD4E566F4F737F1D14 /* XMLTransformOf.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B94FE4FF92B0C9916CCF8D463B6AAC42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F907FC8212A66DD995463AC4DB86445B;
+			remoteInfo = XMLMapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0406B61068A41D2B22F7C19835896DB6 /* XMLMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLMapper.swift; path = XMLMapper/Classes/XMLMapper.swift; sourceTree = "<group>"; };
+		0A556601F54357688AD1BAE61119F337 /* Pods-recipe2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-recipe2-Info.plist"; sourceTree = "<group>"; };
+		151C6AD301AB7FA456A750F2A86FE164 /* XMLMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMLMapper-prefix.pch"; sourceTree = "<group>"; };
+		1CAEF2F8BD3B117C68D37C2B2F4B7282 /* XMLCDATATransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLCDATATransform.swift; path = XMLMapper/Classes/XMLCDATATransform.swift; sourceTree = "<group>"; };
+		1D8203D987705BA73D1DC37538854C5B /* XMLSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLSerialization.swift; path = XMLMapper/Classes/XMLSerialization.swift; sourceTree = "<group>"; };
+		21DB52A8F1DA6388D0D9C8CA93EE011A /* XMLHexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLHexColorTransform.swift; path = XMLMapper/Classes/XMLHexColorTransform.swift; sourceTree = "<group>"; };
+		24D3877AE210EFF906787C2F7B80C211 /* XMLSerialization+ReadingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XMLSerialization+ReadingOptions.swift"; path = "XMLMapper/Classes/XMLSerialization+ReadingOptions.swift"; sourceTree = "<group>"; };
+		25C769ECD872CB522F4EF753D418BC88 /* Dictionary+isEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+isEqual.swift"; path = "XMLMapper/Classes/Dictionary+isEqual.swift"; sourceTree = "<group>"; };
+		280ADE56D2F96AB35021160A36579CCE /* ToXML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToXML.swift; path = XMLMapper/Classes/ToXML.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3858E364350B5E4A0F0F12FAC6650B12 /* XMLMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLMappable.swift; path = XMLMapper/Classes/XMLMappable.swift; sourceTree = "<group>"; };
+		3E484C7FA1E134BD69AB37593540461A /* Pods-recipe2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-recipe2.modulemap"; sourceTree = "<group>"; };
+		3F74740B364412FD160D2B64F1402C26 /* XMLDateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLDateFormatterTransform.swift; path = XMLMapper/Classes/XMLDateFormatterTransform.swift; sourceTree = "<group>"; };
+		45F080E07FFCE3971DC601F5A6FDB1D7 /* XMLParserHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLParserHelper.swift; path = XMLMapper/Classes/XMLParserHelper.swift; sourceTree = "<group>"; };
+		4EEA5D1EEE1BE209DAE866214C947787 /* XMLStringConvertibleTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLStringConvertibleTransform.swift; path = XMLMapper/Classes/XMLStringConvertibleTransform.swift; sourceTree = "<group>"; };
+		5E98E877DFA8F2E2C20337FBDEE216B7 /* Pods_recipe2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_recipe2.framework; path = "Pods-recipe2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1870693975A87E49930D9F9463C576 /* XMLDateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLDateTransform.swift; path = XMLMapper/Classes/XMLDateTransform.swift; sourceTree = "<group>"; };
+		6418F7AE39DE4D6FFD3C31EFC0DD92DE /* XMLURLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLURLTransform.swift; path = XMLMapper/Classes/XMLURLTransform.swift; sourceTree = "<group>"; };
+		679DCEED01EC6057487CB061CAFDBF7E /* XMLEnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLEnumTransform.swift; path = XMLMapper/Classes/XMLEnumTransform.swift; sourceTree = "<group>"; };
+		68512ED0E647B5DA7AE0D40885012F52 /* Array+cdataString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+cdataString.swift"; path = "XMLMapper/Classes/Array+cdataString.swift"; sourceTree = "<group>"; };
+		6C15577EC41044CD2D485585BEE2AF04 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = XMLMapper/Classes/Operators.swift; sourceTree = "<group>"; };
+		6CA314D9C908E0FEBC1EFD6702F64DED /* XMLNSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLNSDecimalNumberTransform.swift; path = XMLMapper/Classes/XMLNSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		713C24484ECC4200978E26459396C4A5 /* XMLTransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLTransformOperators.swift; path = XMLMapper/Classes/XMLTransformOperators.swift; sourceTree = "<group>"; };
+		767F8C712819405E3528BD7DEC4FA1C5 /* XMLMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLMap.swift; path = XMLMapper/Classes/XMLMap.swift; sourceTree = "<group>"; };
+		7871781E03DBFD2B54C0248E8C70CE1C /* String+XMLParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+XMLParser.swift"; path = "XMLMapper/Classes/String+XMLParser.swift"; sourceTree = "<group>"; };
+		7ABE707F11723BF9339C554FACFD3A01 /* XMLRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLRepresentable.swift; path = XMLMapper/Classes/XMLRepresentable.swift; sourceTree = "<group>"; };
+		7B86A8A6D8FDB3E61896033C7ED88132 /* XMLCustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLCustomDateFormatTransform.swift; path = XMLMapper/Classes/XMLCustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		80C7FE0AD4746EAB2B68A380FAC66BB8 /* FromXML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromXML.swift; path = XMLMapper/Classes/FromXML.swift; sourceTree = "<group>"; };
+		850B43AEF1899862AE64461139084BEB /* Pods-recipe2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-recipe2-dummy.m"; sourceTree = "<group>"; };
+		8724E9C58734BF3B5FE2116CD881CF4A /* Sequence+compactMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sequence+compactMap.swift"; path = "XMLMapper/Classes/Sequence+compactMap.swift"; sourceTree = "<group>"; };
+		8CA33B107AFF43F47C9627FC750B16DB /* Dictionary+mapValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+mapValues.swift"; path = "XMLMapper/Classes/Dictionary+mapValues.swift"; sourceTree = "<group>"; };
+		92AA5FCA7B9FB8FDE51AB1A106FF10AF /* XMLObjectParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLObjectParser.swift; path = XMLMapper/Classes/XMLObjectParser.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DADC05F908799584FEC500AA2ADEB6C /* XMLParserConstant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLParserConstant.swift; path = XMLMapper/Classes/XMLParserConstant.swift; sourceTree = "<group>"; };
+		A2219B6429156CB6FBB1EDC35EC7A75C /* Pods-recipe2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-recipe2-acknowledgements.plist"; sourceTree = "<group>"; };
+		A465C868788EE4F7F3979985B6FE6B64 /* Pods-recipe2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-recipe2.debug.xcconfig"; sourceTree = "<group>"; };
+		A4B9201376A9B96B5FED86B87F5FB82B /* XMLEnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLEnumOperators.swift; path = XMLMapper/Classes/XMLEnumOperators.swift; sourceTree = "<group>"; };
+		ACC5647A6CF177FE24C8DF793C09FF09 /* XMLMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XMLMapper.framework; path = XMLMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF2E4085E637AB4BC5FF5B920F90B41 /* XMLMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XMLMapper.modulemap; sourceTree = "<group>"; };
+		AF9D6D85835F7667B9EBB760AA475FA1 /* XMLDictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLDictionaryTransform.swift; path = XMLMapper/Classes/XMLDictionaryTransform.swift; sourceTree = "<group>"; };
+		B54F1D4B2329C33649E8B96454A618CD /* XMLTransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLTransformType.swift; path = XMLMapper/Classes/XMLTransformType.swift; sourceTree = "<group>"; };
+		BAECA9B1818812B61465A06832608544 /* Pods-recipe2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-recipe2.release.xcconfig"; sourceTree = "<group>"; };
+		C486AD6047C31ED019DED6957AE0ABD2 /* XMLStringConvertibleOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLStringConvertibleOperators.swift; path = XMLMapper/Classes/XMLStringConvertibleOperators.swift; sourceTree = "<group>"; };
+		C93A59BD475D70ED77C5D61C355BAF50 /* Dictionary+XMLParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+XMLParser.swift"; path = "XMLMapper/Classes/Dictionary+XMLParser.swift"; sourceTree = "<group>"; };
+		C95EEBBAD9A7EA1ECA9387B0258329F9 /* Pods-recipe2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-recipe2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CD29CE74B1DDAE89075935505C4A9B0F /* XMLMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMLMapper-umbrella.h"; sourceTree = "<group>"; };
+		CE84434D696DE73243295A19D78617E7 /* XMLDataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLDataTransform.swift; path = XMLMapper/Classes/XMLDataTransform.swift; sourceTree = "<group>"; };
+		D6B612AEA54A91BD76FFB5409B2C225A /* NSMutableDictionary+XMLParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSMutableDictionary+XMLParser.swift"; path = "XMLMapper/Classes/NSMutableDictionary+XMLParser.swift"; sourceTree = "<group>"; };
+		DA3EB69A7FCF2D30C57E05B25F6BD3DC /* Pods-recipe2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-recipe2-umbrella.h"; sourceTree = "<group>"; };
+		DF979F68C760C29680EFA34765F482B3 /* XMLSerialization+Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XMLSerialization+Error.swift"; path = "XMLMapper/Classes/XMLSerialization+Error.swift"; sourceTree = "<group>"; };
+		E02DD66C70E6FB6C2F09DAB05D7AAE68 /* XMLMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMLMapper.debug.xcconfig; sourceTree = "<group>"; };
+		E062816DEBEDB925E5EC5CCDCBCB6890 /* XMLMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMLMapper.release.xcconfig; sourceTree = "<group>"; };
+		E4D02F2195A115AD4E566F4F737F1D14 /* XMLTransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLTransformOf.swift; path = XMLMapper/Classes/XMLTransformOf.swift; sourceTree = "<group>"; };
+		F63C840E0F1613BFDA725ABD3123511F /* XMLMapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XMLMapper-Info.plist"; sourceTree = "<group>"; };
+		FA5CDBA89DA7EC4E35F2FBE8AF00893F /* Pods-recipe2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-recipe2-frameworks.sh"; sourceTree = "<group>"; };
+		FB38472571E6B1A36FB2699DFC940309 /* XMLMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMLMapper-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3530E9BAA2D60E58E9986BD9E9394861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3669C56444928738C8566C401C28E5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7297E0FBC537E7B7C0E3C219F6B686E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533E7BFA927A313F674C16B41956EA29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34E925CA9895D4871E282DAEE3ED2345 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADF2E4085E637AB4BC5FF5B920F90B41 /* XMLMapper.modulemap */,
+				FB38472571E6B1A36FB2699DFC940309 /* XMLMapper-dummy.m */,
+				F63C840E0F1613BFDA725ABD3123511F /* XMLMapper-Info.plist */,
+				151C6AD301AB7FA456A750F2A86FE164 /* XMLMapper-prefix.pch */,
+				CD29CE74B1DDAE89075935505C4A9B0F /* XMLMapper-umbrella.h */,
+				E02DD66C70E6FB6C2F09DAB05D7AAE68 /* XMLMapper.debug.xcconfig */,
+				E062816DEBEDB925E5EC5CCDCBCB6890 /* XMLMapper.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XMLMapper";
+			sourceTree = "<group>";
+		};
+		3D2B79713EB497DD5911F312F2083409 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				68512ED0E647B5DA7AE0D40885012F52 /* Array+cdataString.swift */,
+				25C769ECD872CB522F4EF753D418BC88 /* Dictionary+isEqual.swift */,
+				8CA33B107AFF43F47C9627FC750B16DB /* Dictionary+mapValues.swift */,
+				C93A59BD475D70ED77C5D61C355BAF50 /* Dictionary+XMLParser.swift */,
+				80C7FE0AD4746EAB2B68A380FAC66BB8 /* FromXML.swift */,
+				D6B612AEA54A91BD76FFB5409B2C225A /* NSMutableDictionary+XMLParser.swift */,
+				6C15577EC41044CD2D485585BEE2AF04 /* Operators.swift */,
+				8724E9C58734BF3B5FE2116CD881CF4A /* Sequence+compactMap.swift */,
+				7871781E03DBFD2B54C0248E8C70CE1C /* String+XMLParser.swift */,
+				280ADE56D2F96AB35021160A36579CCE /* ToXML.swift */,
+				1CAEF2F8BD3B117C68D37C2B2F4B7282 /* XMLCDATATransform.swift */,
+				7B86A8A6D8FDB3E61896033C7ED88132 /* XMLCustomDateFormatTransform.swift */,
+				CE84434D696DE73243295A19D78617E7 /* XMLDataTransform.swift */,
+				3F74740B364412FD160D2B64F1402C26 /* XMLDateFormatterTransform.swift */,
+				5F1870693975A87E49930D9F9463C576 /* XMLDateTransform.swift */,
+				AF9D6D85835F7667B9EBB760AA475FA1 /* XMLDictionaryTransform.swift */,
+				A4B9201376A9B96B5FED86B87F5FB82B /* XMLEnumOperators.swift */,
+				679DCEED01EC6057487CB061CAFDBF7E /* XMLEnumTransform.swift */,
+				21DB52A8F1DA6388D0D9C8CA93EE011A /* XMLHexColorTransform.swift */,
+				767F8C712819405E3528BD7DEC4FA1C5 /* XMLMap.swift */,
+				3858E364350B5E4A0F0F12FAC6650B12 /* XMLMappable.swift */,
+				0406B61068A41D2B22F7C19835896DB6 /* XMLMapper.swift */,
+				6CA314D9C908E0FEBC1EFD6702F64DED /* XMLNSDecimalNumberTransform.swift */,
+				92AA5FCA7B9FB8FDE51AB1A106FF10AF /* XMLObjectParser.swift */,
+				9DADC05F908799584FEC500AA2ADEB6C /* XMLParserConstant.swift */,
+				45F080E07FFCE3971DC601F5A6FDB1D7 /* XMLParserHelper.swift */,
+				7ABE707F11723BF9339C554FACFD3A01 /* XMLRepresentable.swift */,
+				1D8203D987705BA73D1DC37538854C5B /* XMLSerialization.swift */,
+				DF979F68C760C29680EFA34765F482B3 /* XMLSerialization+Error.swift */,
+				24D3877AE210EFF906787C2F7B80C211 /* XMLSerialization+ReadingOptions.swift */,
+				C486AD6047C31ED019DED6957AE0ABD2 /* XMLStringConvertibleOperators.swift */,
+				4EEA5D1EEE1BE209DAE866214C947787 /* XMLStringConvertibleTransform.swift */,
+				E4D02F2195A115AD4E566F4F737F1D14 /* XMLTransformOf.swift */,
+				713C24484ECC4200978E26459396C4A5 /* XMLTransformOperators.swift */,
+				B54F1D4B2329C33649E8B96454A618CD /* XMLTransformType.swift */,
+				6418F7AE39DE4D6FFD3C31EFC0DD92DE /* XMLURLTransform.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		4E6B0B661ABF523F02C3BF692CEC6123 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E98E877DFA8F2E2C20337FBDEE216B7 /* Pods_recipe2.framework */,
+				ACC5647A6CF177FE24C8DF793C09FF09 /* XMLMapper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A9F1465763AFA66154AB9503B4E9AFF /* Pods-recipe2 */ = {
+			isa = PBXGroup;
+			children = (
+				3E484C7FA1E134BD69AB37593540461A /* Pods-recipe2.modulemap */,
+				C95EEBBAD9A7EA1ECA9387B0258329F9 /* Pods-recipe2-acknowledgements.markdown */,
+				A2219B6429156CB6FBB1EDC35EC7A75C /* Pods-recipe2-acknowledgements.plist */,
+				850B43AEF1899862AE64461139084BEB /* Pods-recipe2-dummy.m */,
+				FA5CDBA89DA7EC4E35F2FBE8AF00893F /* Pods-recipe2-frameworks.sh */,
+				0A556601F54357688AD1BAE61119F337 /* Pods-recipe2-Info.plist */,
+				DA3EB69A7FCF2D30C57E05B25F6BD3DC /* Pods-recipe2-umbrella.h */,
+				A465C868788EE4F7F3979985B6FE6B64 /* Pods-recipe2.debug.xcconfig */,
+				BAECA9B1818812B61465A06832608544 /* Pods-recipe2.release.xcconfig */,
+			);
+			name = "Pods-recipe2";
+			path = "Target Support Files/Pods-recipe2";
+			sourceTree = "<group>";
+		};
+		61A0A69A663076D3D313A4D84CDEB1C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				973777B97B8A21091BDFC78D8100A0AD /* XMLMapper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		973777B97B8A21091BDFC78D8100A0AD /* XMLMapper */ = {
+			isa = PBXGroup;
+			children = (
+				3D2B79713EB497DD5911F312F2083409 /* Core */,
+				34E925CA9895D4871E282DAEE3ED2345 /* Support Files */,
+			);
+			name = XMLMapper;
+			path = XMLMapper;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				61A0A69A663076D3D313A4D84CDEB1C1 /* Pods */,
+				4E6B0B661ABF523F02C3BF692CEC6123 /* Products */,
+				E2898B544C67E552AE1B8FCC04622D8C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2898B544C67E552AE1B8FCC04622D8C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F1465763AFA66154AB9503B4E9AFF /* Pods-recipe2 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6C7ADD0A55E22D0D931DAE3AC7C44736 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C07B0814591375B50CB8EC7C959D5E8 /* XMLMapper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E54C0B9342C9641CB3CDA22E746FAC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2631B830DCF2CA729B760E222E7C268D /* Pods-recipe2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5FC93C155BA2435A9CA9AFD2C3D2F499 /* Pods-recipe2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A735BB94B2CE42DEFB2D62447A7B8FB1 /* Build configuration list for PBXNativeTarget "Pods-recipe2" */;
+			buildPhases = (
+				8E54C0B9342C9641CB3CDA22E746FAC8 /* Headers */,
+				5310852683713FE1360C18C5174CA1CE /* Sources */,
+				3530E9BAA2D60E58E9986BD9E9394861 /* Frameworks */,
+				426355E246C1E6EFA75C00AB62C2DB4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E673EA35A5158B2E138CE30BB58D1927 /* PBXTargetDependency */,
+			);
+			name = "Pods-recipe2";
+			productName = "Pods-recipe2";
+			productReference = 5E98E877DFA8F2E2C20337FBDEE216B7 /* Pods_recipe2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F907FC8212A66DD995463AC4DB86445B /* XMLMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 592C912E783B40124661CD478D8C2FEA /* Build configuration list for PBXNativeTarget "XMLMapper" */;
+			buildPhases = (
+				6C7ADD0A55E22D0D931DAE3AC7C44736 /* Headers */,
+				0F38167A0D9C7358A02A4287DD5E9E9A /* Sources */,
+				7297E0FBC537E7B7C0E3C219F6B686E0 /* Frameworks */,
+				195D4D6C4300B98061D4C1428C63C8C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMLMapper;
+			productName = XMLMapper;
+			productReference = ACC5647A6CF177FE24C8DF793C09FF09 /* XMLMapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4E6B0B661ABF523F02C3BF692CEC6123 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FC93C155BA2435A9CA9AFD2C3D2F499 /* Pods-recipe2 */,
+				F907FC8212A66DD995463AC4DB86445B /* XMLMapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		195D4D6C4300B98061D4C1428C63C8C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426355E246C1E6EFA75C00AB62C2DB4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F38167A0D9C7358A02A4287DD5E9E9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C7831178A452AB16120CB149F2C983 /* Array+cdataString.swift in Sources */,
+				5FCF99B4F1AB220C91E80A8C5A3B09E3 /* Dictionary+isEqual.swift in Sources */,
+				88BE631EB34B1CDBAB158024338563DC /* Dictionary+mapValues.swift in Sources */,
+				D0DE7C684B06F4D64C46D54DBC896881 /* Dictionary+XMLParser.swift in Sources */,
+				EA8EE780A5DD8BC448BD70A7B7F6FA4C /* FromXML.swift in Sources */,
+				369DBE854D6583C6AA2BD745D9C1243E /* NSMutableDictionary+XMLParser.swift in Sources */,
+				D1DB4CB56120B07F81790B6561A25E18 /* Operators.swift in Sources */,
+				3CB6BE085BBAB09821BF1097E95EE011 /* Sequence+compactMap.swift in Sources */,
+				B276872F6AE04F500E026BFF198C7FE1 /* String+XMLParser.swift in Sources */,
+				C0C4C7E63281302E7EAC40F831B9634A /* ToXML.swift in Sources */,
+				AC35D270A2B32A410267F15A70997DAC /* XMLCDATATransform.swift in Sources */,
+				181661FE2568E633D18903E97B1CDF5E /* XMLCustomDateFormatTransform.swift in Sources */,
+				8650E4BBD4725DFA7E35449BDB1855F2 /* XMLDataTransform.swift in Sources */,
+				6BE54D5B54F2C16F98242D8DE744753B /* XMLDateFormatterTransform.swift in Sources */,
+				8CE9595586875D2EE33CBFE4C1B74BB9 /* XMLDateTransform.swift in Sources */,
+				D21A811AD101D11B44D106C6095A4DF8 /* XMLDictionaryTransform.swift in Sources */,
+				4C0E2EB0B5276F39A31240E7FF622AAA /* XMLEnumOperators.swift in Sources */,
+				85418FBA7E87DC7E162FAF3241C87417 /* XMLEnumTransform.swift in Sources */,
+				2488AA41FF89CC698DD1C9D265D00B6E /* XMLHexColorTransform.swift in Sources */,
+				5432C19F8A34A73E16339610AD3C514E /* XMLMap.swift in Sources */,
+				44C3973B1731C11BCA9883B0959BE75A /* XMLMappable.swift in Sources */,
+				8EFBB33611D29DBEB0894A21AB79FB81 /* XMLMapper-dummy.m in Sources */,
+				42BEEAC592B6EA9D52BDD197C3785AE2 /* XMLMapper.swift in Sources */,
+				A908205D077E7C0A53713608AC97E52E /* XMLNSDecimalNumberTransform.swift in Sources */,
+				7AEA7848786425AA49C2A2578E31AA40 /* XMLObjectParser.swift in Sources */,
+				90646231050471AFC00A1EFBE4A4EB7C /* XMLParserConstant.swift in Sources */,
+				8DD83016C6F24B7E6BD8186221F5B226 /* XMLParserHelper.swift in Sources */,
+				9014CE5DF68046022A8766FE16666655 /* XMLRepresentable.swift in Sources */,
+				5C6AE37E3848E68D3E4AF7AED939547D /* XMLSerialization+Error.swift in Sources */,
+				7676C64A77B9EF20B900FC8034A81EE9 /* XMLSerialization+ReadingOptions.swift in Sources */,
+				CB97C2935C463CCF872429105B07C489 /* XMLSerialization.swift in Sources */,
+				F61DDF37937615866AB24422BE8701F0 /* XMLStringConvertibleOperators.swift in Sources */,
+				E87804EDC364124A26DE48A76570C138 /* XMLStringConvertibleTransform.swift in Sources */,
+				FE56EE2591B402EECE0DC8777F41C76C /* XMLTransformOf.swift in Sources */,
+				439FBF62F99409EA01BA382ED6040BCB /* XMLTransformOperators.swift in Sources */,
+				75286B2E2818C0C05A4BD4854C8B9148 /* XMLTransformType.swift in Sources */,
+				E93659EE2A81461D52947C33BEE7AE2C /* XMLURLTransform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5310852683713FE1360C18C5174CA1CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC41989A7E70B401532DE303466E00A /* Pods-recipe2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E673EA35A5158B2E138CE30BB58D1927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMLMapper;
+			target = F907FC8212A66DD995463AC4DB86445B /* XMLMapper */;
+			targetProxy = B94FE4FF92B0C9916CCF8D463B6AAC42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C362D60953AB8C3CE6296B04039C734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		228B0B6EC99778FAD8E986EB8D231FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAECA9B1818812B61465A06832608544 /* Pods-recipe2.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-recipe2/Pods-recipe2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-recipe2/Pods-recipe2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58CBF049B177C4A06BC9A2842967CA3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E062816DEBEDB925E5EC5CCDCBCB6890 /* XMLMapper.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XMLMapper/XMLMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMLMapper/XMLMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XMLMapper/XMLMapper.modulemap";
+				PRODUCT_MODULE_NAME = XMLMapper;
+				PRODUCT_NAME = XMLMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6726C43C1CC927C20071D11C039DBF0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A465C868788EE4F7F3979985B6FE6B64 /* Pods-recipe2.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-recipe2/Pods-recipe2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-recipe2/Pods-recipe2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70316595C2F2AE9923F8DA14508E87F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AD7FD6021A3F704FBAF5F0D15C825EB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02DD66C70E6FB6C2F09DAB05D7AAE68 /* XMLMapper.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XMLMapper/XMLMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMLMapper/XMLMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XMLMapper/XMLMapper.modulemap";
+				PRODUCT_MODULE_NAME = XMLMapper;
+				PRODUCT_NAME = XMLMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C362D60953AB8C3CE6296B04039C734 /* Debug */,
+				70316595C2F2AE9923F8DA14508E87F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		592C912E783B40124661CD478D8C2FEA /* Build configuration list for PBXNativeTarget "XMLMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD7FD6021A3F704FBAF5F0D15C825EB3 /* Debug */,
+				58CBF049B177C4A06BC9A2842967CA3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A735BB94B2CE42DEFB2D62447A7B8FB1 /* Build configuration list for PBXNativeTarget "Pods-recipe2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6726C43C1CC927C20071D11C039DBF0C /* Debug */,
+				228B0B6EC99778FAD8E986EB8D231FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
